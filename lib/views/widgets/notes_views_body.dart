@@ -15,7 +15,9 @@ class NotesViewsBody extends StatelessWidget {
             height: 26,
           ),
           CustomAppBar(),
-          NoteItem(),
+        
+        
+        
         ],
       ),
     );
