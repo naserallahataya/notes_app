@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 class cstomSearchIcon extends StatelessWidget {
-  const cstomSearchIcon({super.key});
-
+  const cstomSearchIcon({super.key, required this.icon});
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,7 +13,7 @@ class cstomSearchIcon extends StatelessWidget {
           borderRadius: BorderRadius.circular(16)),
       child: Center(
         child: Icon(
-          Icons.search,
+          icon,
           size: 28,
         ),
       ),
