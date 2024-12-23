@@ -8,7 +8,7 @@ part 'add_note_state.dart';
 
 class AddNotesCubit extends Cubit<AddNoteState> {
   AddNotesCubit() : super(AddNotesInitial());
-
+ 
   addNote(NoteModel note) async {
     emit(AddNoteLoading());
     try {
