@@ -19,12 +19,12 @@ class NoteItem extends StatelessWidget {
           left: 16,
         ),
         decoration: BoxDecoration(
-            color: Color(0xffFFcc80), borderRadius: BorderRadius.circular(16)),
+            color:const  Color(0xffFFcc80), borderRadius: BorderRadius.circular(16)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              title: Text(
+              title: const  Text(
                 'FLutte tips ',
                 style: TextStyle(fontSize: 26, color: Colors.black),
               ),
@@ -33,12 +33,12 @@ class NoteItem extends StatelessWidget {
                 child: Text(
                   'build your career with ataya nasrt',
                   style: TextStyle(
-                      fontSize: 26, color: Colors.black.withOpacity(.4)),
+                      fontSize: 26, color: Colors.black.withValues(alpha: .4)),
                 ),
               ),
               trailing: IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon:const  Icon(
                     Icons.delete,
                     color: Colors.black,
                     size: 40,
@@ -49,7 +49,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 'May21,2024',
                 style: TextStyle(
-                    fontSize: 16, color: Colors.black.withOpacity(.4)),
+                    fontSize: 16, color: Colors.black.withValues(alpha: .4)),
               ),
             )
           ],
