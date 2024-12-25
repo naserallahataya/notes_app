@@ -3,16 +3,17 @@ import 'package:note_app/views/constant.dart';
 
 class CustomTetFiled extends StatelessWidget {
   const CustomTetFiled(
-      {super.key, required this.hint, this.maxLines = 1, this.onSaved});
+      {super.key, required this.hint, this.maxLines = 1, this.onSaved, this.onChang});
   final String hint;
   final int maxLines;
   final void Function(String?)? onSaved;
-
+final void Function(String)? onChang;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16.0, right: 16, left: 16),
       child: TextFormField(
+        onChanged:onChang ,
         onSaved: onSaved,
         validator: (value) {
           if (value?.isEmpty ?? true) {
