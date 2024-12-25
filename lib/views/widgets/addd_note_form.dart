@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:note_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:note_app/model/note_model.dart';
+import 'package:note_app/views/widgets/color_list_view.dart';
 import 'package:note_app/views/widgets/custom_button.dart';
 import 'package:note_app/views/widgets/custom_tet_filed.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,6 +40,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                   },
                   hint: 'Content',
                   maxLines: 5),
+              const ColorLostView(),
               BlocBuilder<AddNotesCubit, AddNoteState>(
                 builder: (context, state) {
                   return CustomButtom(
