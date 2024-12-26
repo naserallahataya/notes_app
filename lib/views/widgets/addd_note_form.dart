@@ -40,7 +40,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                   },
                   hint: 'Content',
                   maxLines: 5),
-              const ColorLostView(),
+              const ColorListView(),
               BlocBuilder<AddNotesCubit, AddNoteState>(
                 builder: (context, state) {
                   return CustomButtom(
