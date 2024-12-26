@@ -22,7 +22,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Column(
+      child: ListView(
         children: [
           const SizedBox(
             height: 50,
